@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AirLines</string>
+    <string name="pager_1">首页</string>
+    <string name="pager_2">航班动态</string>
+    <string name="pager_3">我</string>
+    <string name="pager_4">更多</string>
+    <string name="f_ticket_book">机票预订</string>
+    <string name="f_select_seat">提前选座</string>
+    <string name="f_nan_hang_holiday">南航假期</string>
+    <string name="f_reboot">退改/升舱</string>
+    <string name="f_my_order">我的订单</string>
+    <string name="f_ticket_exchange">机票兑换</string>
+
+</resources>

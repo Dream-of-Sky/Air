@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--style for no actionBar extends parent-->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_light</item>
+        <item name="colorPrimaryDark">@color/blue_light</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--  style for viewPager button-->
+    <style name="main_tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/tab_textcolor</item>
+    </style>
+
+    <style name="icon_a1" parent="main_tab">
+        <item name="android:drawableTop">@drawable/icon_a</item>
+    </style>
+    <style name="icon_b1" parent="main_tab">
+        <item name="android:drawableTop">@drawable/icon_b</item>
+    </style>
+    <style name="icon_c1" parent="main_tab">
+        <item name="android:drawableTop">@drawable/icon_c</item>
+    </style>
+    <style name="icon_d1" parent="main_tab">
+        <item name="android:drawableTop">@drawable/icon_d</item>
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.team.four.airlines.MainActivity">
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+      </android.support.v4.view.ViewPager>
+
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+          android:background="@drawable/img_f_radiobutton_background"
+            android:orientation="horizontal">
+        <RadioButton
+             style="@style/icon_a1"
+            android:text="@string/pager_1"
+            android:id="@+id/radioButton4"
+         />
+        <RadioButton
+            style="@style/icon_b1"
+            android:text="@string/pager_2"
+            android:id="@+id/radioButton5"
+          />
+
+        <RadioButton
+            style="@style/icon_c1"
+            android:text="@string/pager_3"
+            android:id="@+id/radioButton6"
+          />
+
+        <RadioButton
+            style="@style/icon_d1"
+            android:text="@string/pager_4"
+            android:id="@+id/radioButton7"
+     />
+    </RadioGroup>
+
+</LinearLayout>

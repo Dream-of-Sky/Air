@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_light"
+        android:minHeight="50dp" >
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/img_f_exchange"
+        android:id="@+id/b_img_exchange"
+        android:layout_gravity="center_vertical|start"/>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_f_action_bar_title"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_f_feedback"
+        android:id="@+id/b_img_feedback"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="center_vertical|end"/>
+    </android.support.v7.widget.Toolbar>
+    <!--图片轮播-->
+    <com.example.team.four.airlines.z_fan.F_CycleShowView
+        android:id="@+id/cycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment1">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                >
+
+                <RelativeLayout
+                    android:layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0">
+                    <ImageView
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/img_f_book"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/img_f_book"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@id/img_f_book"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/f_ticket_book"
+                        android:id="@+id/tv_f_book"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:layout_below="@id/tv_f_book"
+                        android:id="@+id/img_f_seat"
+                        android:background="@drawable/img_f_select_seat"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/f_select_seat"
+                        android:layout_below="@id/img_f_seat"
+                        android:id="@+id/tv_img_f_seat"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_row="0"
+                    android:layout_column="1">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/img_f_holiday"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/img_f_holiday"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/f_nan_hang_holiday"
+                        android:layout_below="@id/img_f_holiday"
+                        android:id="@+id/tv_f_holiday"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tv_f_holiday"
+                        android:id="@+id/img_f_rebook"
+                        android:background="@drawable/img_f_rebook"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/img_f_rebook"
+                        android:text="@string/f_reboot"
+                        android:id="@+id/tv_f_rebook"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:id="@+id/img_f_order"
+                        android:background="@drawable/img_f_order"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/f_my_order"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/img_f_order"
+                        android:id="@+id/tv_f_order"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/tv_f_order"
+                        android:id="@+id/img_f_ticket_exchange"
+                        android:background="@drawable/img_f_ticket_exchange"
+
+                        android:elevation="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/f_ticket_exchange"
+                        android:layout_below="@id/img_f_ticket_exchange"
+                        android:id="@+id/tv_f_ticket_exchange"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </GridLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
