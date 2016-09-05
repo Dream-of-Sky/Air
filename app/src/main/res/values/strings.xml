@@ -10,5 +10,9 @@
     <string name="f_reboot">退改/升舱</string>
     <string name="f_my_order">我的订单</string>
     <string name="f_ticket_exchange">机票兑换</string>
+    <!-- Yu*************************************************-->
+    <string name="y_leave_arrival">出发/到达</string>
+    <string name="y_flight_number">航班号</string>
+    <string name="y_my_concern">我的关注</string>
 
 </resources>

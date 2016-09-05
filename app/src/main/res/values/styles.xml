@@ -36,5 +36,11 @@
     <style name="icon_d1" parent="main_tab">
         <item name="android:drawableTop">@drawable/icon_d</item>
     </style>
+    <!--style for flight dynamics-->
+    <style name="y_flight_dynamics">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/white_gray</item>
+
+    </style>
 
 </resources>
