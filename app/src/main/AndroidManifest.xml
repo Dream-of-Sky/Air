@@ -30,7 +30,8 @@
         <activity android:name=".y_jiangpeng.P_TesstActivity" />
         <activity android:name=".z_fan.F_TestActivity" />
         <activity android:name=".z_tianjiao.J_TestActivity" />
-        <activity android:name=".y_jiangpeng.TestYActivity"></activity>
+        <activity android:name=".y_jiangpeng.TestYActivity" />
+        <activity android:name=".h_jingbo.Main3Activity"></activity>
     </application>
 
 </manifest>
