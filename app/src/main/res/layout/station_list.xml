@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_light"
+        android:minHeight="50dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/y_select_city"
+            android:id="@+id/y_select_city"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/station_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/station_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E8E8"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none" />
+
+        <com.example.team.four.airlines.stationlist.LetterListView
+            android:id="@+id/stationLetterListView"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="#40000000" />
+    </RelativeLayout>
+
+</LinearLayout>

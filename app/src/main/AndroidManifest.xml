@@ -20,11 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".h_jingbo.B_TestActivity" />
         <activity android:name=".y_jiangpeng.P_TesstActivity" />
@@ -32,6 +28,13 @@
         <activity android:name=".z_tianjiao.J_TestActivity" />
         <activity android:name=".y_jiangpeng.TestYActivity" />
         <activity android:name=".h_jingbo.Main2Activity"></activity>
+        <activity android:name=".stationlist.StationListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
