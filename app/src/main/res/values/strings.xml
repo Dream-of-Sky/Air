@@ -14,5 +14,20 @@
     <string name="y_leave_arrival">出发/到达</string>
     <string name="y_flight_number">航班号</string>
     <string name="y_my_concern">我的关注</string>
+    <string name="y_usual_airline">常用航线</string>
+    <string name="y_leave_city1">出发城市</string>
+    <string name="y_arrive_city1">到达城市</string>
+    <string name="y_select_please">请选择</string>
+    <string name="y_leave_date">出发日期</string>
+    <string name="y_month">九月</string>
+    <string name="y_week">周一</string>
+    <string name="y_day">05</string>
+    <string name="y_voice">语音</string>
+    <string name="y_query">查询</string>
+    <string name="y_number_cz">航班号   CZ</string>
+    <string name="y_number_input">请输入航班号如:   如 3101</string>
+    <string name="y_add_attention_number">添加关注航班</string>
+
+
 
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -35,35 +36,434 @@
             android:text="@string/y_leave_arrival"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/y_btn_leave"
             android:layout_weight="1"
             style="@style/y_flight_dynamics"
-            android:layout_marginBottom="1dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="1dp"
-            android:background="@drawable/y_shape_btn1" />
+            android:background="@drawable/y_shape_btn1_1" />
 
         <Button
             android:text="@string/y_flight_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
+            android:id="@+id/y_btn_airLines"
             android:layout_weight="1"
             style="@style/y_flight_dynamics"
-            android:layout_margin="1dp" />
+            android:background="@drawable/y_shape_btn2" />
 
         <Button
             android:text="@string/y_my_concern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button3"
+            android:id="@+id/y_btn_attention"
             android:layout_weight="1"
             style="@style/y_flight_dynamics"
-            android:layout_marginBottom="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginTop="1dp" />
+            android:background="@drawable/y_shape_btn3" />
 
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:id="@+id/y_linear_btn3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/y_picture_attention"
+                android:id="@+id/imageView3" />
+
+            <Button
+                android:text="@string/y_add_attention_number"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:id="@+id/y_btn_add_number"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/y_shape_btn6"
+                android:layout_marginTop="32dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:drawableStart="@drawable/y_btn_add"
+                android:gravity="center_vertical"
+                android:paddingStart="52dp"
+                android:paddingEnd="0dp"
+                android:drawablePadding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/y_linear_btn2"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:background="@color/btn_selected">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:text="@string/y_number_cz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:layout_weight="0"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none|textPersonName"
+                        android:id="@+id/editText"
+                        android:layout_weight="0"
+                        android:ems="10"
+                        android:layout_gravity="center_vertical"
+                        android:hint="@string/y_number_input"
+                        android:paddingStart="2dp"
+                        android:textSize="19sp"
+                        android:background="@null" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        app:srcCompat="@drawable/y_calendar"
+                        android:id="@+id/imageView"
+                        android:layout_marginStart="56dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:text="@string/y_leave_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/y_leave_datte2"
+                        android:textSize="18sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/y_leave_datte2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:text="@string/y_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_month2"
+                                android:textSize="18sp"
+                                android:layout_gravity="center_horizontal" />
+
+                            <TextView
+                                android:text="@string/y_week"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_week2"
+                                android:textSize="18sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="4dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="@string/y_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/y_day2"
+                            android:textSize="34sp"
+                            android:textStyle="normal|bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="4dp"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="44dp"
+                    app:srcCompat="@drawable/y_img_voice2"
+                    android:id="@+id/y_voice2"
+                    android:background="@drawable/y_shape_btn5" />
+
+                <Button
+                    android:text="@string/y_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:id="@+id/y_query2"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/y_shape_btn6"
+                    android:drawableLeft="@drawable/y_query"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:paddingStart="86dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="6dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/y_linear_btn1"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_selected">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@android:color/white"
+                        android:layout_margin="0.8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="26dp"
+                            android:layout_marginTop="16dp"
+                            android:id="@+id/y_linear1">
+
+                            <TextView
+                                android:text="@string/y_leave_city1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_tv_leave_city"
+                                android:textSize="18sp"
+                                android:layout_gravity="center_horizontal" />
+
+                            <TextView
+                                android:text="@string/y_select_please"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_tv_select1"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="18sp"
+                                android:textStyle="normal|bold"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBaseline="@id/y_linear1"
+                            android:layout_alignBottom="@id/y_linear1"
+                            android:layout_marginEnd="26dp">
+
+                            <TextView
+                                android:text="@string/y_arrive_city1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_tv_arrive_city"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:text="@string/y_select_please"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_tv_select2"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:textSize="18sp"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            app:srcCompat="@drawable/y_img_exchange"
+                            android:id="@+id/y_img_exchange"
+                            android:layout_below="@+id/y_usual_airline"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp" />
+
+                        <Button
+                            android:text="@string/y_usual_airline"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/y_usual_airline"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/y_shape_btn4"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@android:color/white"
+                        android:layout_marginStart="0.8dp"
+                        android:layout_marginEnd="0.8dp"
+                        android:layout_marginBottom="0.8dp">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            app:srcCompat="@drawable/y_calendar"
+                            android:id="@+id/y_calendar"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="42dp" />
+
+                        <TextView
+                            android:text="@string/y_leave_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/y_leave_date"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/y_leave_date"
+                            android:layout_centerHorizontal="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:text="@string/y_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/y_moth"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:text="@string/y_week"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/y_week"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="18sp"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:text="@string/y_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/y_day"
+                                android:textSize="34sp"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"
+                                android:elevation="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="4dp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="44dp"
+                    app:srcCompat="@drawable/y_img_voice2"
+                    android:id="@+id/y_voice"
+                    android:layout_weight="0"
+                    android:background="@drawable/y_shape_btn5" />
+
+                <Button
+                    android:text="@string/y_query"
+                    android:drawableLeft="@drawable/y_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:id="@+id/y_query"
+                    android:layout_weight="1"
+                    android:background="@drawable/y_shape_btn6"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="86dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="6dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
 
 </LinearLayout>
+
