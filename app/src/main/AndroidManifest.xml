@@ -31,10 +31,9 @@
         <activity android:name=".z_fan.F_TestActivity" />
         <activity android:name=".z_tianjiao.J_TestActivity" />
         <activity android:name=".y_jiangpeng.TestYActivity" />
-        <activity android:name=".h_jingbo.Main2Activity"></activity>
-        <activity android:name=".stationlist.StationListActivity">
-
-        </activity>
+        <activity android:name=".h_jingbo.Main2Activity" />
+        <activity android:name=".stationlist.StationListActivity"></activity>
+        <activity android:name=".z_tianjiao.Main4Activity"></activity>
     </application>
 
 </manifest>
